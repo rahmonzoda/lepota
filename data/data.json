@@ -1,0 +1,815 @@
+{
+    "urls": {
+        "pluginUrl": "http://demo.dizzi.ladela.com/wp-content/plugins/dizzi",
+        "ajaxUrl": "http://demo.dizzi.ladela.com/wp-admin/admin-ajax.php"
+    },
+    "product": {
+        "id": 152,
+        "images": [
+            {
+                "id": "394",
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/v2.png",
+                "width": 500,
+                "height": 500,
+                "pa_left": "22",
+                "pa_top": "4",
+                "pa_width": "56",
+                "pa_height": "92",
+                "pa_stroke": "#d8d8d8",
+                "is_general_image": true,
+                "mask_type": "0",
+                "mask": "",
+                "mask_width_orig": 375,
+                "single_image_width": 500,
+                "single_image_height": 500,
+                "shop_thumbnail_width": 120,
+                "shop_thumbnail_height": 120
+            },
+            {
+                "id": "393",
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/v1.png",
+                "width": 500,
+                "height": 500,
+                "pa_left": "22",
+                "pa_top": "4",
+                "pa_width": "56",
+                "pa_height": "92",
+                "pa_stroke": "#81d742",
+                "is_general_image": false,
+                "mask_type": "0",
+                "mask": "",
+                "mask_width_orig": 375,
+                "single_image_width": 500,
+                "single_image_height": 500,
+                "shop_thumbnail_width": 120,
+                "shop_thumbnail_height": 120
+            }
+        ]
+    },
+    "clipArts": {
+        "categories": {
+            "15": {
+                "id": "15",
+                "name": "Action",
+                "children": []
+            },
+            "7": {
+                "id": "7",
+                "name": "Animals",
+                "children": [
+                    {
+                        "id": "10",
+                        "name": "Cats"
+                    },
+                    {
+                        "id": "8",
+                        "name": "Dogs"
+                    },
+                    {
+                        "id": "11",
+                        "name": "Horses"
+                    },
+                    {
+                        "id": "13",
+                        "name": "kangaroo"
+                    }
+                ]
+            },
+            "9": {
+                "id": "9",
+                "name": "Funny",
+                "children": []
+            },
+            "12": {
+                "id": "12",
+                "name": "Geometrical figures",
+                "children": []
+            },
+            "14": {
+                "id": "14",
+                "name": "Signs",
+                "children": []
+            }
+        },
+        "arts": [
+            {
+                "id": 376,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/noun-project-122-1.svg",
+                "categories": [
+                    14
+                ]
+            },
+            {
+                "id": 362,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-big-earred-dog.svg",
+                "categories": [
+                    7,
+                    9
+                ]
+            },
+            {
+                "id": 363,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/Gerald-G-Clam-Security-Guard.svg",
+                "categories": [
+                    7,
+                    9
+                ]
+            },
+            {
+                "id": 360,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/Machovka-teddy-bear.svg",
+                "categories": [
+                    7,
+                    9
+                ]
+            },
+            {
+                "id": 344,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/Gerald-G-Cartoon-Cat-Walking.svg",
+                "categories": [
+                    7,
+                    10,
+                    9
+                ]
+            },
+            {
+                "id": 342,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/Gerald-G-Dog-Face-Cartoon-World-Label.svg",
+                "categories": [
+                    7,
+                    8,
+                    9
+                ]
+            },
+            {
+                "id": 341,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/liftarn-Ddraig.svg",
+                "categories": [
+                    7,
+                    14
+                ]
+            },
+            {
+                "id": 339,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/liftarn-Bat.svg",
+                "categories": [
+                    7
+                ]
+            },
+            {
+                "id": 338,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-Lion.svg",
+                "categories": [
+                    7,
+                    10
+                ]
+            },
+            {
+                "id": 335,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/Gerald-G-Gorilla-with-Colour.svg",
+                "categories": [
+                    7,
+                    9
+                ]
+            },
+            {
+                "id": 336,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-cartoon-dog.svg",
+                "categories": [
+                    7,
+                    9
+                ]
+            },
+            {
+                "id": 319,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-animal-parade-2.svg",
+                "categories": [
+                    7,
+                    9
+                ]
+            },
+            {
+                "id": 320,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-boar-hunt.svg",
+                "categories": [
+                    15
+                ]
+            },
+            {
+                "id": 322,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-moose.svg",
+                "categories": [
+                    7
+                ]
+            },
+            {
+                "id": 321,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-hunting-boar.svg",
+                "categories": [
+                    15
+                ]
+            },
+            {
+                "id": 323,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-on-the-horse.svg",
+                "categories": [
+                    15
+                ]
+            },
+            {
+                "id": 324,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/papapishu-Fighting-cat.svg",
+                "categories": [
+                    7,
+                    10,
+                    9
+                ]
+            },
+            {
+                "id": 316,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/johnny-automatic-pig-sticking.svg",
+                "categories": [
+                    15
+                ]
+            },
+            {
+                "id": 298,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/opasno_yadovitye_veshestva_Abali.ru_.png",
+                "categories": [
+                    14
+                ]
+            },
+            {
+                "id": 299,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/znak-radiaciya.png",
+                "categories": [
+                    14
+                ]
+            },
+            {
+                "id": 300,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/biologicheskaya_opasnost_infekcionnie_veshestva_Abali.ru_.png",
+                "categories": [
+                    14
+                ]
+            },
+            {
+                "id": 301,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/ezhevika.png",
+                "categories": [
+                    9
+                ]
+            },
+            {
+                "id": 302,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2015/01/opasno_lazernoe_izluchenie_Abali.ru_.png",
+                "categories": [
+                    14
+                ]
+            },
+            {
+                "id": 287,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/flower-smiley-remix1.png",
+                "categories": [
+                    9
+                ]
+            },
+            {
+                "id": 265,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/liftarn_Cat_silhouette.svg",
+                "categories": [
+                    7,
+                    10
+                ]
+            },
+            {
+                "id": 263,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/johnny_automatic_cartoon_dog_1.svg",
+                "categories": [
+                    7,
+                    8,
+                    9
+                ]
+            },
+            {
+                "id": 262,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/johnny_automatic_black_cat.svg",
+                "categories": [
+                    7,
+                    10
+                ]
+            },
+            {
+                "id": 261,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/johnny_automatic_barking_dog.svg",
+                "categories": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "id": 260,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/Horse-Silhouette1.svg",
+                "categories": [
+                    7,
+                    11
+                ]
+            },
+            {
+                "id": 259,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/horse1.svg",
+                "categories": [
+                    7,
+                    11
+                ]
+            },
+            {
+                "id": 255,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/dog.svg",
+                "categories": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "id": 244,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/johnny_automatic_horse_skeleton.svg",
+                "categories": [
+                    7,
+                    9,
+                    11
+                ]
+            },
+            {
+                "id": 243,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/Horse-Silhouette.svg",
+                "categories": [
+                    7,
+                    11
+                ]
+            },
+            {
+                "id": 242,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/horse.svg",
+                "categories": [
+                    7,
+                    11
+                ]
+            },
+            {
+                "id": 232,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/ryanlerch_No_horse_riding_sign.svg",
+                "categories": [
+                    14
+                ]
+            },
+            {
+                "id": 218,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/nicubunu_Kangaroo_contour.svg",
+                "categories": [
+                    7,
+                    13
+                ]
+            },
+            {
+                "id": 200,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/knot_3.svg",
+                "categories": [
+                    12
+                ]
+            },
+            {
+                "id": 199,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/knot_2.svg",
+                "categories": [
+                    12
+                ]
+            },
+            {
+                "id": 197,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/Dodecahedron.svg",
+                "categories": [
+                    12
+                ]
+            },
+            {
+                "id": 180,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/octahedron.svg",
+                "categories": [
+                    12
+                ]
+            },
+            {
+                "id": 162,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/dog_silhouette.svg",
+                "categories": [
+                    7,
+                    8
+                ]
+            },
+            {
+                "id": 161,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/CAT.svg",
+                "categories": [
+                    7,
+                    10,
+                    9
+                ]
+            },
+            {
+                "id": 159,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/cat-farbe.svg",
+                "categories": [
+                    7,
+                    10,
+                    9
+                ]
+            },
+            {
+                "id": 163,
+                "url": "http://demo.dizzi.ladela.com/wp-content/uploads/2014/11/dog-contactr.svg",
+                "categories": [
+                    7,
+                    8,
+                    9
+                ]
+            }
+        ]
+    },
+    "templates": [
+        {
+            "id": 397,
+            "cw": 600,
+            "ch": 600,
+            "data": {
+                "objects": [
+                    {
+                        "type": "text",
+                        "originX": "center",
+                        "originY": "center",
+                        "left": 299.13,
+                        "top": 76.43,
+                        "width": 183.7,
+                        "height": 52,
+                        "fill": "#000000",
+                        "stroke": null,
+                        "strokeWidth": 1,
+                        "strokeDashArray": null,
+                        "strokeLineCap": "butt",
+                        "strokeLineJoin": "miter",
+                        "strokeMiterLimit": 10,
+                        "scaleX": 1.18,
+                        "scaleY": 1.18,
+                        "angle": 0,
+                        "flipX": false,
+                        "flipY": false,
+                        "opacity": 1,
+                        "shadow": null,
+                        "visible": true,
+                        "backgroundColor": "",
+                        "_controlsVisibility": {
+                            "tl": true,
+                            "tr": true,
+                            "br": true,
+                            "bl": true,
+                            "ml": false,
+                            "mt": false,
+                            "mr": false,
+                            "mb": false,
+                            "mtr": true
+                        },
+                        "cornerSize": 30,
+                        "lockMovementX": false,
+                        "lockMovementY": false,
+                        "lockScalingX": false,
+                        "lockScalingY": false,
+                        "lockRotation": false,
+                        "text": "Your Name",
+                        "fontSize": 40,
+                        "fontWeight": "normal",
+                        "fontFamily": "Lora",
+                        "fontStyle": "normal",
+                        "lineHeight": 1.3,
+                        "textDecoration": "",
+                        "textAlign": "center",
+                        "path": null,
+                        "textBackgroundColor": "",
+                        "useNative": true
+                    },
+                    {
+                        "type": "text",
+                        "originX": "center",
+                        "originY": "center",
+                        "left": 299.13,
+                        "top": 128.05,
+                        "width": 131.08,
+                        "height": 52,
+                        "fill": "#000000",
+                        "stroke": null,
+                        "strokeWidth": 1,
+                        "strokeDashArray": null,
+                        "strokeLineCap": "butt",
+                        "strokeLineJoin": "miter",
+                        "strokeMiterLimit": 10,
+                        "scaleX": 0.63,
+                        "scaleY": 0.63,
+                        "angle": 0,
+                        "flipX": false,
+                        "flipY": false,
+                        "opacity": 1,
+                        "shadow": null,
+                        "visible": true,
+                        "backgroundColor": "",
+                        "_controlsVisibility": {
+                            "tl": true,
+                            "tr": true,
+                            "br": true,
+                            "bl": true,
+                            "ml": false,
+                            "mt": false,
+                            "mr": false,
+                            "mb": false,
+                            "mtr": true
+                        },
+                        "cornerSize": 30,
+                        "lockMovementX": false,
+                        "lockMovementY": false,
+                        "lockScalingX": false,
+                        "lockScalingY": false,
+                        "lockRotation": false,
+                        "text": "Position",
+                        "fontSize": 40,
+                        "fontWeight": "normal",
+                        "fontFamily": "Lora",
+                        "fontStyle": "normal",
+                        "lineHeight": 1.3,
+                        "textDecoration": "",
+                        "textAlign": "center",
+                        "path": null,
+                        "textBackgroundColor": "",
+                        "useNative": true
+                    },
+                    {
+                        "type": "text",
+                        "originX": "center",
+                        "originY": "center",
+                        "left": 299.13,
+                        "top": 302.6,
+                        "width": 321.08,
+                        "height": 52,
+                        "fill": "#000000",
+                        "stroke": null,
+                        "strokeWidth": 1,
+                        "strokeDashArray": null,
+                        "strokeLineCap": "butt",
+                        "strokeLineJoin": "miter",
+                        "strokeMiterLimit": 10,
+                        "scaleX": 0.87,
+                        "scaleY": 0.87,
+                        "angle": 0,
+                        "flipX": false,
+                        "flipY": false,
+                        "opacity": 1,
+                        "shadow": null,
+                        "visible": true,
+                        "backgroundColor": "",
+                        "_controlsVisibility": {
+                            "tl": true,
+                            "tr": true,
+                            "br": true,
+                            "bl": true,
+                            "ml": false,
+                            "mt": false,
+                            "mr": false,
+                            "mb": false,
+                            "mtr": true
+                        },
+                        "cornerSize": 30,
+                        "lockMovementX": false,
+                        "lockMovementY": false,
+                        "lockScalingX": false,
+                        "lockScalingY": false,
+                        "lockRotation": false,
+                        "text": "Phone: 055 555 555",
+                        "fontSize": 40,
+                        "fontWeight": "normal",
+                        "fontFamily": "Lora",
+                        "fontStyle": "normal",
+                        "lineHeight": 1.3,
+                        "textDecoration": "",
+                        "textAlign": "center",
+                        "path": null,
+                        "textBackgroundColor": "",
+                        "useNative": true
+                    },
+                    {
+                        "type": "text",
+                        "originX": "center",
+                        "originY": "center",
+                        "left": 299.13,
+                        "top": 343.42,
+                        "width": 324.43,
+                        "height": 52,
+                        "fill": "#000000",
+                        "stroke": null,
+                        "strokeWidth": 1,
+                        "strokeDashArray": null,
+                        "strokeLineCap": "butt",
+                        "strokeLineJoin": "miter",
+                        "strokeMiterLimit": 10,
+                        "scaleX": 0.87,
+                        "scaleY": 0.87,
+                        "angle": 0,
+                        "flipX": false,
+                        "flipY": false,
+                        "opacity": 1,
+                        "shadow": null,
+                        "visible": true,
+                        "backgroundColor": "",
+                        "_controlsVisibility": {
+                            "tl": true,
+                            "tr": true,
+                            "br": true,
+                            "bl": true,
+                            "ml": false,
+                            "mt": false,
+                            "mr": false,
+                            "mb": false,
+                            "mtr": true
+                        },
+                        "cornerSize": 30,
+                        "lockMovementX": false,
+                        "lockMovementY": false,
+                        "lockScalingX": false,
+                        "lockScalingY": false,
+                        "lockRotation": false,
+                        "text": "email@domain.com",
+                        "fontSize": 40,
+                        "fontWeight": "normal",
+                        "fontFamily": "Lora",
+                        "fontStyle": "normal",
+                        "lineHeight": 1.3,
+                        "textDecoration": "",
+                        "textAlign": "center",
+                        "path": null,
+                        "textBackgroundColor": "",
+                        "useNative": true
+                    },
+                    {
+                        "type": "text",
+                        "originX": "center",
+                        "originY": "center",
+                        "left": 299.13,
+                        "top": 385.96,
+                        "width": 292.85,
+                        "height": 52,
+                        "fill": "#000000",
+                        "stroke": null,
+                        "strokeWidth": 1,
+                        "strokeDashArray": null,
+                        "strokeLineCap": "butt",
+                        "strokeLineJoin": "miter",
+                        "strokeMiterLimit": 10,
+                        "scaleX": 0.87,
+                        "scaleY": 0.87,
+                        "angle": 0,
+                        "flipX": false,
+                        "flipY": false,
+                        "opacity": 1,
+                        "shadow": null,
+                        "visible": true,
+                        "backgroundColor": "",
+                        "_controlsVisibility": {
+                            "tl": true,
+                            "tr": true,
+                            "br": true,
+                            "bl": true,
+                            "ml": false,
+                            "mt": false,
+                            "mr": false,
+                            "mb": false,
+                            "mtr": true
+                        },
+                        "cornerSize": 30,
+                        "lockMovementX": false,
+                        "lockMovementY": false,
+                        "lockScalingX": false,
+                        "lockScalingY": false,
+                        "lockRotation": false,
+                        "text": "www.domain.com",
+                        "fontSize": 40,
+                        "fontWeight": "normal",
+                        "fontFamily": "Lora",
+                        "fontStyle": "normal",
+                        "lineHeight": 1.3,
+                        "textDecoration": "",
+                        "textAlign": "center",
+                        "path": null,
+                        "textBackgroundColor": "",
+                        "useNative": true
+                    }
+                ],
+                "background": ""
+            },
+            "image_id": "394",
+            "template_state": {
+                "id": 397,
+                "left": 17.75,
+                "top": 23.75,
+                "scaleX": 0.5625,
+                "scaleY": 0.5625,
+                "angle": 0,
+                "canvas": {
+                    "width": 375,
+                    "height": 375
+                }
+            }
+        },
+        {
+            "id": 398,
+            "cw": 600,
+            "ch": 600,
+            "data": {
+                "objects": [
+                    {
+                        "type": "text",
+                        "originX": "center",
+                        "originY": "center",
+                        "left": 299.13,
+                        "top": 299.13,
+                        "width": 255.6,
+                        "height": 52,
+                        "fill": "#000000",
+                        "stroke": null,
+                        "strokeWidth": 1,
+                        "strokeDashArray": null,
+                        "strokeLineCap": "butt",
+                        "strokeLineJoin": "miter",
+                        "strokeMiterLimit": 10,
+                        "scaleX": 0.87,
+                        "scaleY": 0.87,
+                        "angle": 0,
+                        "flipX": false,
+                        "flipY": false,
+                        "opacity": 1,
+                        "shadow": null,
+                        "visible": true,
+                        "backgroundColor": "",
+                        "_controlsVisibility": {
+                            "tl": true,
+                            "tr": true,
+                            "br": true,
+                            "bl": true,
+                            "ml": false,
+                            "mt": false,
+                            "mr": false,
+                            "mb": false,
+                            "mtr": true
+                        },
+                        "cornerSize": 30,
+                        "lockMovementX": false,
+                        "lockMovementY": false,
+                        "lockScalingX": false,
+                        "lockScalingY": false,
+                        "lockRotation": false,
+                        "text": "Business name",
+                        "fontSize": 40,
+                        "fontWeight": "normal",
+                        "fontFamily": "Courgette",
+                        "fontStyle": "normal",
+                        "lineHeight": 1.3,
+                        "textDecoration": "",
+                        "textAlign": "center",
+                        "path": null,
+                        "textBackgroundColor": "",
+                        "useNative": true
+                    }
+                ],
+                "background": ""
+            },
+            "image_id": "393",
+            "template_state": {
+                "id": 398,
+                "left": 18.75,
+                "top": 49.75,
+                "scaleX": 0.5625,
+                "scaleY": 0.5625,
+                "angle": 0,
+                "canvas": {
+                    "width": 375,
+                    "height": 375
+                }
+            }
+        }
+    ],
+    "fonts": [
+        "Anaheim",
+        "Tinos",
+        "Bevan",
+        "Iceberg",
+        "Kenia",
+        "Sunshiney",
+        "Courgette"
+    ],
+    "is_product_page": true
+}

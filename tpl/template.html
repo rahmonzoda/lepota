@@ -1,0 +1,253 @@
+<div class="designer-wrapper">
+    <div class="designer-area">
+        <div class="image-holder">
+	        <a href="#/{{imagePrev.id}}" class="changes-image previous-image" ng-show="thumbnails" style="display: inline;">Previous image</a>
+
+        	<div class="image-inner-wrapper">
+        		<img ng-src="{{imageActive.url}}" 
+        			width="{{imageActive.single_image_width}}" 
+        			height="{{imageActive.single_image_height}}"
+        			style="visibility: visible;width: 650px;height: 650px;"
+        			class="dizzi-product" alt="">
+        			
+		        <div class="canvas">
+		        	<div class="canvas-container" parent-click="fabric.deactivateAll()">
+		        		<canvas fabric="fabric"></canvas>
+		        	</div>
+		        </div>
+		    </div>
+        	
+        	<a href="#/{{imageNext.id}}" class="changes-image next-image" ng-show="thumbnails" style="display: inline;">Next image</a>
+    	</div> 
+    </div>
+</div>
+
+
+
+<div class="controls-layer-view-holder">
+
+	<div class="controls-layer">
+		<div class="btn-control">
+			<a href="#/{{imageId}}" id="c-save" class="btn btn-default" title="Save">
+				<i class="fa fa-check-circle-o"></i>
+			</a>
+			<a href="#/{{imageId}}" id="c-cancel" class="btn btn-default" title="Cancel">
+				<i class="fa fa-times"></i>
+			</a>
+		</div>
+		<div class="dropdown-zoom">
+		    <a ng-href="#/{{imageId}}" ng-click="zoomIn()" class="btn btn-default" ng-show="!inZoom" title="Zoom in">
+		        <i class="fa fa-search-plus"></i>
+		    </a>
+		    <a href="#/{{imageId}}/" ng-click="zoomOut()" class="btn btn-default" ng-show="inZoom" title="Zoom out">
+		        <i class="fa fa-search-minus"></i>
+		    </a>
+		    <a href="#/{{imageId}}/preview" ng-click="previewIn()" class="btn btn-default" ng-show="!inPreview" title="Preview">
+		        <i class="fa fa-eye"></i>
+		    </a>
+		</div>
+
+		<ul class="image-thumbnails">
+			<li ng-repeat="image in images" id="image-thumbnail-{{image.id}}" ng-class="{active: imageId==image.id}">
+				<a href="#/{{image.id}}">
+					<img ng-src="{{image.url}}" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="nav-button btn-group" style="display: block;">
+        <span ng-click="fabric.download('myCanvas')" class="btn btn-default">
+        	<i class="fa fa-cloud-download"></i> Скачать
+        </span>
+        <span ng-click="fabric.clearCanvas(); fabric.setDirty(true)" class="btn btn-default">
+        	<i class="fa fa-refresh"></i> Восстановить 
+        </span>
+        <span class="btn btn-default upload-file">
+        	<input type="file" ng-model-instant onchange="angular.element(this).scope().setFiles(this)" />
+        	<i class="fa fa-cloud-upload"></i> Загрузить     	
+        </span>
+        <span ng-click="toggleArts()" class="btn btn-default">
+        	<i class="fa fa-picture-o"></i> Клипарт
+        </span>
+        <span ng-click="fabric.addText()" class="btn btn-default">
+        	<i class="fa fa-font"></i> Текст
+        </span>
+    </div>
+
+    <div ng-show="artToggle && !fabric.selectedObject">
+    	<arts></arts>  
+    </div>
+	
+    <div ng-if="fabric.selectedObject">
+
+	    <div class="text-inspector" style="display: block;">
+	        <ul id="ai-art-menu" class="nav list-edit">
+	            <li>
+	            	<span class="btn btn-default" 
+	            		ng-click="fabric.deleteActiveObject(); fabric.setDirty(true)">
+
+	            		<i class="fa fa-trash-o"></i> Убрать</span>
+	            </li>
+	            <li>
+	            	<span class="btn btn-default" 
+	            		ng-class="{ active: fabric.getFlipX() }" ng-click="{ active: fabric.toggleFlipX() }">
+	            		
+	            		<i class='fa fa-exchange'></i> Отразить по горизонтали
+	            	</span>
+	            </li>
+	            <li>
+	            	<span class="btn btn-default" 
+	            		ng-class="{ active: fabric.getFlipY() }" ng-click="{ active: fabric.toggleFlipY() }">
+	            		
+	            		<i class='fa fa-exchange'></i> Отразить по вертикали
+	            	</span>
+	            </li>
+	            <li><span class="btn btn-default" 
+	            		ng-click='fabric.centerH()'>
+
+	            		<i class="fa fa-arrows-v"></i> Центрировать по горизонтали</span>
+	            </li>
+
+	            <li><span class="btn btn-default" 
+						ng-click='fabric.centerV()'>
+
+	            		<i class="fa fa-arrows-v"></i> Центрировать по вертикали</span>
+	            </li>
+
+	            <li>
+					<span class="btn"
+						ng-click='fabric.sendToBack(); fabric.setDirty(true)'>
+						
+						<i class="fa fa-chevron-up"></i> На задний план
+					</span>
+	            </li>
+
+	            <li>
+					<span class="btn"
+						ng-click='fabric.bringToFront(); fabric.setDirty(true)'>
+
+						<i class="fa fa-chevron-down"></i> На передний план
+					</span>
+	            </li>
+
+	            <li>
+	            	
+					<span class="btn"
+						ng-click='fabric.toggleLockActiveObject(); fabric.setDirty(true)'
+						ng-class="{ active: fabric.selectedObject.lockObject }">
+
+						<i class="fa fa-key"></i> Блокировать 
+					</span>
+	            </li>
+	        </ul>
+	       	<div ng-switch='fabric.selectedObject.type'>
+	       	
+		        <div class="font-color">
+		            <div class="color-preview" colorpicker  ng-model="fabric.selectedObject.fill"  style="background: {{fabric.selectedObject.fill}}" >
+		            	
+		            </div>
+		            <div class="sp-dd">▼</div>
+		        </div>
+
+		        <div class="opacity">
+		        	<input class='col-sm-12' title="Transparency" type='range'
+                     	min="0"
+                     	max="1"
+                     	step=".01"
+                     	ng-model="fabric.selectedObject.opacity" />
+		        </div>
+				
+
+
+       			<div ng-switch-when='text' class="nav-text-editor">       			
+
+			        <div class="clearfix last">
+			            <div class="font-list-wrapper">
+
+			               	<ui-select ng-model="fabric.selectedObject.fontFamily">
+								<ui-select-match placeholder="Select font" >
+									<span style="font-family: {{fabric.selectedObject.fontFamily}};">{{fabric.selectedObject.fontFamily}}</span>
+								</ui-select-match>
+	
+								<ui-select-choices repeat="font in FabricConstants.fonts | filter:font">
+							      	<div ng-bind-html="font" style="font-family: {{font}};">{{font}}</div>					      
+							    </ui-select-choices>
+	
+							</ui-select>		
+			            </div>
+			            	<div class="font-size">
+			            		<div class="row">
+			            			<div class="col-sm-6" title="Font size">
+					            		<i class="fa fa-text-height"></i>
+					            		<input type='number' class="form-control" ng-model="fabric.selectedObject.fontSize" />			            				
+			            			</div>
+			            			<div class="col-sm-6" title="Line height">
+			            				<i class="fa fa-align-left"></i>
+			                			<input type='number' class="form-control" ng-model="fabric.selectedObject.lineHeight" step=".1" />
+			            			</div>
+			            		</div>
+			            	</div>
+							
+			            <div class="font-w-and-s" class="text-style">
+			                <span class="btn"
+			                	ng-class="{ active: fabric.isBold() }" 
+			                	ng-click="fabric.toggleBold()" >
+	
+			                	<i class="fa fa-bold"></i>
+			                </span>
+	
+		                    <span class="btn"
+			                	ng-class="{ active: fabric.isItalic() }" 
+			                	ng-click="fabric.toggleItalic()">
+							
+		                    	<i class="fa fa-italic"></i>
+		                    </span>
+
+		                    <span class='btn btn-small'
+		                    	ng-class="{ active: fabric.isUnderline() }" 
+		                    	ng-click="fabric.toggleUnderline()">
+			                  <i class='fa fa-underline'></i>
+			                </span>
+
+			                <span class='btn btn-small' 
+			                	ng-class="{ active: fabric.isLinethrough() }" 
+			                	ng-click="fabric.toggleLinethrough()">
+			                  <i class='fa fa-strikethrough'></i>
+			                </span>
+
+	
+			            </div>
+			            <div class="text-alignment" >
+			                <span class="btn btn-default" 
+			                	ng-class="{ active: fabric.selectedObject.textAlign == 'left' }"
+			                	ng-click="fabric.selectedObject.textAlign = 'left'" >	
+			                	<i class="fa fa-align-left"></i>
+			                </span>
+	
+		                    <span class="btn btn-default" 
+		                    	ng-class="{ active: fabric.selectedObject.textAlign == 'center' }"
+		                    	ng-click="fabric.selectedObject.textAlign = 'center'" >
+	
+		                    	<i class="fa fa-align-center"></i>
+		                    </span>
+		                    <span class="btn btn-default" 
+		                    	ng-class="{ active: fabric.selectedObject.textAlign == 'right' }"
+		                    	ng-click="fabric.selectedObject.textAlign = 'right'" >
+	
+		                    	<i class="fa fa-align-right"></i>
+		                    </span>
+			            </div>
+			            <textarea style="text-align: {{ fabric.selectedObject.textAlign }}" 
+			            	class="form-control" rows="3" 
+			            	ng-model="fabric.selectedObject.text"></textarea>
+			        </div>
+			    </div>
+	       	</div>
+	    </div>
+		
+
+	</div>
+
+</div>
+

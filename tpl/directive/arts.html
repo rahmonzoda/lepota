@@ -1,0 +1,35 @@
+	<div class="dropdown-art">
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+            	<tr>
+	                <td class="first-col">
+	                    <div class="category-list">
+					      
+							<select ng-model="selectCategory"
+                				ng-options="cat.id as cat.name for cat in categories"
+                				ng-change="actionCategory()">
+            				</select>
+
+            				<select ng-show="isSubcat"
+            					ng-model="selectSubCategory"
+                				ng-options="subcat.id as subcat.name for subcat in subcategories"
+                				ng-change="actionSubCategory()">
+            				</select>
+
+	                    </div>
+	                </td>
+	            </tr>
+            	<tr>
+                	<td class="last-col">
+                    	<ul>
+                   		    <li ng-repeat="art in arts">
+                   		    	<a href="#" ng-click="addArt(art)">
+                   		    		<img ng-src="{{art.url}}" alt="">
+                   		    	</a>
+                   		    </li>                
+                    	</ul>
+                	</td>
+            	</tr>
+        	</tbody>
+        </table>
+    </div>

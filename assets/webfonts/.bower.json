@@ -1,0 +1,33 @@
+{
+  "name": "webfonts",
+  "version": "2.0.0",
+  "authors": [
+    "gluten <goulvenschaal@me.com>"
+  ],
+  "description": "A sass partial to quickly include webfonts.",
+  "main": "_webfonts.scss",
+  "keywords": [
+    "sass",
+    "scss",
+    "webfonts"
+  ],
+  "license": "MIT",
+  "homepage": "www.glutendesign.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.0",
+    "commit": "0ba4c797eaa3d5c44ecac77e4f927fdc1547202a"
+  },
+  "_source": "git://github.com/redgluten/webfonts.git",
+  "_target": "~2.0.0",
+  "_originalSource": "webfonts",
+  "_direct": true
+}

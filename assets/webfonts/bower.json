@@ -1,0 +1,23 @@
+{
+  "name": "webfonts",
+  "version": "2.0.0",
+  "authors": [
+    "gluten <goulvenschaal@me.com>"
+  ],
+  "description": "A sass partial to quickly include webfonts.",
+  "main": "_webfonts.scss",
+  "keywords": [
+    "sass",
+    "scss",
+    "webfonts"
+  ],
+  "license": "MIT",
+  "homepage": "www.glutendesign.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
